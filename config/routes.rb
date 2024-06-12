@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   resources :users
   get 'home/index'
   get 'read/:article_id', to: 'home#read', as: "read"
